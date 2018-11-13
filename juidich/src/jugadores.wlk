@@ -25,6 +25,12 @@ class Jugador {
 	method habilidad(){
 		return 0
 	}
+	
+	method lePasaElTrapo(unJugador){
+		return self.habilidad()  > unJugador.habilidad() * 2
+	}
+	
+	
 }
 
 class Cazador inherits Jugador{
